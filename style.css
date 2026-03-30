@@ -1,0 +1,302 @@
+ /* site theme colours*/
+   /* background color (beige): #fffbea
+      green: #133e1d
+      text: black 
+      yellow: #e8d070
+
+ /* ------------------*/
+
+* {
+  margin: 0;
+  padding: 0;         
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* these rules reset default browser settings, allowing full customization and control of page design*/   
+
+body {
+   background-color: #fffbea;
+   color: black; 
+   font-family: 'Cormorant Garamond', serif;
+   font-size: 18px;
+   line-height: 1.6;
+}
+main {
+   margin-top: 80px;
+   margin-bottom: 80px;
+}
+/* heading styling */
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Playfair Display', serif;
+   font-weight: 700; /*bolding for headings*/
+   color: #133e1d;
+   line-height: 1.2;
+}
+
+ /* ----------- HEADER ---------*/ 
+ header {
+    position:sticky;
+    top: 0;
+    z-index: 1000; /*assigns high stacking order, making the header appear on the forefront of all elements*/ 
+    background-color: #133E1D;
+    padding: 20px 20px;
+}
+
+ .header-content {
+    max-width: 1015px;
+    margin: 0 auto; 
+    padding: 10px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    
+ }
+ 
+ .header-site-name h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #e8d070;
+    text-align: right;
+ }
+
+
+ .header-site-name h1 a { 
+    text-decoration: none; 
+    font-size: inherit;
+    color: #e8d070
+
+ }
+
+ .header-nav {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+ }
+
+ .header-nav nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    display: flex;
+    gap: 15px;
+ }
+
+ .header-nav nav ul li a { 
+    font-size: 18px;
+    padding: 6px 10px; 
+    text-decoration: none; 
+    color: #e8d070
+ }
+
+
+ /* ------------------------- */ 
+ 
+ .header-content, .footer-content {
+   max-width: 1015px;
+   margin: 0 auto;
+   padding: 10px 20px ;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ /* ---------- FOOTER -----------*/
+ footer { 
+    font-size: 18px;
+    border-top: 1px solid;
+    padding: 20px 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color:#133E1D
+ }
+
+ .footer-content { 
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .footer-site-name h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #e8d070;
+    text-align: right;
+ }
+
+ .footer-site-name h1 a {
+    text-decoration: none;
+    font-size: inherit;
+    color: #e8d070;
+ }
+
+ .footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #e8d070; 
+ }
+
+ .footer-nav a {
+   color: #e8d070;
+   text-decoration: none;
+ }
+
+ .footer-nav nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+ }
+
+.footer-nav nav ul li a {
+    font-size: 18px;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 0 120px;
+    padding-bottom: 30px;
+}
+
+ /* ----------- NAV BAR + BUTTONS --------*/ 
+.top-button { 
+   padding-right:275px;
+   text-align: right;
+
+} 
+ 
+/*------------------------------*/
+
+
+
+
+
+/*--------- BODY TEXT ----------*/
+p {
+    max-width: 1000px;
+    margin: 0 auto 1.5rem;
+    padding: 0 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+figcaption {
+   font-style: italic;
+   font-size: 15px;
+   padding-top: 0;
+}
+.quote-section {
+   margin: 60px;
+}
+
+.quote-label {
+   display: block;
+   max-width: 700px;
+   margin: 0 auto 10px;
+   font-size: 20px;
+   letter-spacing: 1px;
+   color: black;
+   text-transform: uppercase;
+}
+
+blockquote { 
+   max-width: 700px;
+   margin: 0 auto;
+   padding-left: 20px;
+   border-left: 3px solid #133E1D;
+   font-style: italic;
+   color: #133E1D;
+}
+
+blockquote p {
+   margin-bottom: 1rem;
+}
+/*-----------------------------*/
+
+
+ /*--------- TOGGLE PARAGRAPHS + BUTTONS --------*/
+ .paragraph {
+    display: none; 
+ }
+
+ .active-paragraph {
+    display: block;
+ }
+
+.toggle-button {
+   display: flex;
+   justify-content: center;
+   margin: 60px 0;
+ }
+
+ .toggle-button button {
+   font-family: 'Playfair Display', serif;
+   font-size: 20px;
+   padding: 15px 25px;
+   border: 1.5px solid #133e1d;
+   background-color: #133e1d;
+   color: #fffbea;
+   cursor: pointer;
+   border-radius: 30px;
+   transition: all 0.3s ease;
+
+ }
+ /*------------------------------------------*/ 
+
+ /*------------ METADATA TABLES ------------*/
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60%;
+  margin: 40px auto; 
+  font-size: 16px;
+  background-color: #fffbea;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid  #704f33;
+  padding: 12px 16px; 
+  text-align: left;
+}
+
+th {
+  background-color: #133e1d;
+  color: #fffbea ;
+  font-weight: bold;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color:#fffbea;
+}
+
+td {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+td a { 
+  text-decoration: none;
+}
+
+table td:nth-child(1){
+  text-align: left;
+  font-weight: bold;
+}
+
