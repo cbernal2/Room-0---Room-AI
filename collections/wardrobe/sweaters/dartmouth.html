@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	<title> Home - Room 0</title>
+	<title> Sweaters - Room 0</title>
 	<link rel="stylesheet" href="../../../style.css">
 </head> 
 
@@ -50,7 +50,7 @@
 
 <!----- AI Archvist Toggle Button -->
 <div class="toggle-button">
-	<button onclick="toggleParagraph()"> AI Archivist</button>
+	<button  id="toggleBtn" onclick="toggleParagraph()"> AI Archivist</button>
 </div>
 <!----------------------------------->
 	
@@ -58,6 +58,9 @@
 
 <!------ This is the Human Archivist initial paragraph-------->
 <div id="p1" class="paragraph active-paragraph"> 
+
+<div class="quote-section">
+  <span class="quote-label">Dad's Memory</span>
 
 <blockquote>
 	<p><i>"Bought this in Vermont when visiting our cousins. Michelle moved out there when her husband, Michael, was doing his residency as an anethesiologist at the Dartmouth University hospital.</i></p> 
@@ -69,6 +72,8 @@
 	<p><i>So the rest of the trip my right shoulder was in a sling. I still have the sling that everyone signed! I'll show you it!"</i></p> 
 
 </blockquote> 
+
+</div>
 
 
 <p> This is one of my favourite sweaters.</p>
@@ -234,17 +239,23 @@
   function toggleParagraph() {
     const p1 = document.getElementById("p1");
     const p2 = document.getElementById("p2");
+	const button = document.getElementById("toggleBtn");
 
     if (p1.classList.contains("active-paragraph")) {
       p1.classList.remove("active-paragraph");
       p2.classList.add("active-paragraph");
+
+	  button.textContent = "View Human Archivist";
     } else {
       p2.classList.remove("active-paragraph");
       p1.classList.add("active-paragraph");
+
+	  button.textContent = "View AI Archivist";
     }
   }
 </script>
 <!-------------------------------------------->
+
 
 
 

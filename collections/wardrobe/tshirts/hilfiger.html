@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<title> Tshirts - Room 0</title>
+	<link rel="stylesheet" href="../../../style.css">
+</head> 
+
+<!-- "back to top" button anchor tag -->
+ <body> 
+	<a id="top"></a>
+
+<!------------ HEADER ------------->
+<header> 
+	<div class="header-content">
+	<div class="header-site-name">
+			<h1><a href="../../../index.html">Room Ø</a></h1>
+		</div>
+	<div class="header-nav">
+	<!-- this aligns the header with the title on the left -->
+	<nav> <!-- NAVIGATION BAR --->
+		<ul> 
+			<li><a href="../../../index.html" class="active">Home</a></li> <!-- !CHANGE ACTIVE ON EACH PAGE! -->
+			<li><a href="../../../about.html">About</a></li>
+			<li><a href="../../../collections.html">Collections</a></li>
+			<li><a href="../../../az.html">A-Z</a></li>
+		</ul>
+	</nav> <!-- NAVIGATION BAR --->
+</div>
+</div>
+</header>
+<!---------------------------------->
+
+ <main>
+
+<div style="text-align: center">
+	<h3>Tommy Hilfiger Longsleeve</h3>
+</div>
+
+<br>
+
+<!--- IMAGE -->
+<div style="text-align: center;">
+	<img src="../../../images/shirt-tommy.JPG" alt="Tommy Hilfiger Longsleeve" style="width: 500px; height: auto; border-radius: 30px; transform: rotate(360deg)">
+	<figcaption>Tommy Hilfiger long sleeve. Image taken by Me.</figcaption> 
+</div>
+<!------------>
+	
+<br>
+
+<!----- AI Archvist Toggle Button -->
+<div class="toggle-button">
+	<button id="toggleBtn" onclick="toggleParagraph()"> AI Archivist</button>
+</div>
+<!----------------------------------->
+
+
+<!------ This is the Human Archivist initial paragraph-------->
+<div id="p1" class="paragraph active-paragraph"> 
+
+<div class="quote-section">
+  <span class="quote-label">Dad's Memory</span>
+
+<blockquote>
+	I got this for my birthday from Tita Mildred a long time ago. Our birthdays are a day or two apart, 
+    I did not get her anything. Me and Tita Mildred went to grade school together.
+</blockquote> 
+
+</div>
+
+<!----------------------------------------------------------->
+
+  <br><br><br>
+
+<!----------------HUMAN METADATA TABLE ----------------------->
+<div style="text-align: center;">
+      <h3>Artifact Metadata</h3>
+    </div>
+
+  <table class="table">
+  <!-- table headings -->
+
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<!-------------------->
+  	<tr>
+      <td>Name</td>
+      <td>Tommy Hilfiger long sleeve tshirt</td>
+    </tr>
+   <tr>
+    <td>Collection</td>
+    <td>Clothes & Accessories</td>
+    </tr>
+  <tr>
+    <td>Origin</td>
+    <td>Gifted by my Tita Mildred to my Dad for his birthday.</td>
+  </tr>
+  <tr>
+    <td>Date</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>Location</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>Condition</td>
+    <td> Used - Like new.</td>
+  </tr>
+  <tr>
+    <td>Colour</td>
+    <td>Navy blue, White</td>
+  </tr>
+  <tr>
+    <td>Material</td>
+    <td>Cotton</td>
+    </td>
+  </tr>
+
+  </table>
+<!-------------------------------- --> 
+
+</div>
+
+
+<!-------- this is the AI Archivist paragraph---------------->
+<div id="p2" class=paragraph> 
+
+	<div style="text-align:center;">
+		<h2>ARC-2026-003</h2>
+		<br><br>
+	</div>
+
+    <p>This shirt feels like a relic from a different pace of life. Every time I pull it on, I’m reminded of that specific early-2000s 
+        aesthetic—bold logos and that heavier, reliable cotton that you just don't find in modern "fast fashion." For me, it represents
+         a time when my style was finding its footing. It’s stayed in my closet through several moves and clean-outs because it’s reached 
+         that perfect level of comfort where the seams don’t itch and the fabric has perfectly contoured to how I move. It’s a bit nostalgic,
+          a bit rugged, and still one of the most effortless things I own when I want to feel like myself without trying too hard.
+    </p>
+
+
+  <br><br><br>
+
+<!-------------AI ARCHIVIST METADATA TABLE----------------->
+	<div style="text-align: center;">
+      <h3>Artifact Metadata</h3>
+    </div>
+
+  <table class="table">
+  <!-- table headings -->
+
+    <tr>
+      <th>Field</th>
+      <th>Details</th>
+   </tr>
+<!-------------------->
+   <tr>
+    <td>Title/Name</td>
+    <td>Tommy Hilfiger Denim Long-Sleeve Graphic Tee</td>
+    </tr>
+  <tr>
+    <td>Date</td>
+    <td>Estimated circa 2000–2005</td>
+  </tr>
+    <td>Material</td>
+    <td>Cotton jersey</td>
+  </tr>
+  <tr>
+    <td>Physical Description</td>
+    <td>Navy blue long-sleeve shirt. Features a prominent embroidered/screen-printed graphic on the chest with a gothic-style 
+        "T," the "Tommy Hilfiger" wordmark in light blue, and "DENIM" in outlined block letters. Red brand tag visible at the neckline.</td>
+  </tr>
+  <tr>
+    <td>Condition</td>
+    <td>Good. The fabric shows a soft, even wash-wear patina. The collar and cuffs appear to have held their shape well, 
+        though the navy has settled into a comfortable, matte finish.</td>
+  </tr>
+  <tr>
+    <td>Provenance</td>
+    <td>Personal wardrobe; early-2000s lifestyle apparel.</td>
+  </tr>
+ 
+
+  </table>
+
+</div>
+
+<!----------------------------------------------------------->
+
+
+<!--- JS to control toggle button --------->
+<script>
+  function toggleParagraph() {
+    const p1 = document.getElementById("p1");
+    const p2 = document.getElementById("p2");
+	const button = document.getElementById("toggleBtn");
+
+    if (p1.classList.contains("active-paragraph")) {
+      p1.classList.remove("active-paragraph");
+      p2.classList.add("active-paragraph");
+
+	  button.textContent = "View Human Archivist";
+    } else {
+      p2.classList.remove("active-paragraph");
+      p1.classList.add("active-paragraph");
+
+	  button.textContent = "View AI Archivist";
+    }
+  }
+</script>
+<!-------------------------------------------->
+
+
+
+
+
+</main>
+
+
+
+<!-- "back to top" button --->
+<a href="#top">↑ Back to Top</a>
+
+<!------------- FOOTER -------------->
+<footer> 
+<div class="footer-content">
+
+<nav class="footer-nav"> 
+	<a href="../../../index.html">Home</a>
+	<a href="../../../about.html">About</a>
+	<a href="../../../collections.html">Collections</a>
+	<a href="../../../az.html">A-Z</a>
+</nav>
+
+<div class="footer-site-name">
+	<h1><a href="../../../index.html">Room Ø</a></h1>
+</div>
+</div>
+
+
+</footer> 
+<!----------------------------------->
+
+
+<!-- bottom center copyright --->
+<p class="footer-copy">&copy; 2025 Room 0. All rights reserved.</p>
+<!------------------------------------>
+
+
+</body>
+</html> 
