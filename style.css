@@ -300,3 +300,24 @@ table td:nth-child(1){
   font-weight: bold;
 }
 
+/*---------------------------------------------*/
+
+/*----------- GRID STYLING --------------------*/
+.grid-container{ 
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap: 40px;
+   justify-items: center;
+   margin-top: 50px;
+}
+
+.grid-item img {
+   width: 100%;
+   max-width: 600px;
+   height: auto;
+   border-radius: 30px;
+}
+
+.grid-item { 
+   text-align:center; 
+}
