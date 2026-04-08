@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	<title> Postcards - Room 0</title>
+	<title> writehere - Room 0</title>
 	<link rel="stylesheet" href="../../../style.css">
 </head> 
 
@@ -22,10 +22,10 @@
 	<!-- this aligns the header with the title on the left -->
 	<nav> <!-- NAVIGATION BAR --->
 		<ul> 
-			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../index.html"></a></li>
 			<li><a href="../../../about.html">About</a></li>
-			<li><a href="../../../collections.html" class="active">Collections</a></li>
-			<!--<li><a href="../../az.html">A-Z</a></li>-->
+			<li><a href="../../../collections.html" class="active">Home</a></li> <!-- !CHANGE ACTIVE ON EACH PAGE! -->>Collections</a></li>
+			<!--<li><a href="../../../az.html">A-Z</a></li>-->
 		</ul>
 	</nav> <!-------------------->
 </div>
@@ -36,7 +36,7 @@
  <main>
 
 <div style="text-align: center">
-	<h3> BETTER TITLEe</h3>
+	<h3>.  </h3>
 </div>
 
 <br><br><br> 
@@ -44,8 +44,8 @@
 
 <!--- IMAGE -->
 <div style="text-align: center;">
-	<img src="../../../images/ephemera_portdover.jpeg" alt="Postcard from Port Dover, ON'" style="width: 500px; height: auto; border-radius: 30px; transform: rotate(3600deg)">
-	<figcaption>A postcard from a trip to Port Dover. Image taken by Me.</figcaption> 
+	<img src="../../../images/ephemera_goodluck.jpeg" alt="Letter from Neighbours" style="width: 400px; height: auto; border-radius: 30px; transform: rotate(270deg)">
+	<figcaption></figcaption> 
 </div>
 <!------------>
 	
