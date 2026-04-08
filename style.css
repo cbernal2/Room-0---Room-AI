@@ -212,13 +212,21 @@ a:hover {
    color: #e8d070;
    opacity: 0.7;
 }
+/* IMAGE STYLING */
 
 
 figcaption {
    font-style: italic;
    font-size: 15px;
    padding-top: 0;
+   margin-top: 8px;
 }
+
+
+
+/*--------------------*/
+
+
 .quote-section {
    margin: 60px;
 }
