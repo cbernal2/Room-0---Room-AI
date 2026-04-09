@@ -45,7 +45,7 @@
 <!--- IMAGE -->
 <div style="text-align: center;">
 	<img src="../../images/books-2023.jpeg" alt="1/2 Diaries I kept in 2023." style="width: 400px; height: auto; border-radius: 30px; transform: rotate(360deg)">
-	<figcaption>1 out of 2 journals I kept in 2023. Image taken by Me.</figcaption> 
+	<figcaption>1 out of 2 journals I kept in. Image taken by Me.</figcaption> 
 </div>
 <!------------>
 	
@@ -138,11 +138,20 @@
 <div id="p2" class=paragraph> 
 
 	<div style="text-align:center;">
-		<h2> AI Generated: "The Sweatshirt That Stayed"</h2>
+		<h2>LIT-JRN-2023-CB</h2>
 		<br><br>
 	</div>
 
-	<p> here </p>
+	<p>Looking at this cover is like looking at a countdown. I remember the exact 
+    feeling of the pen on this cardstock as I marked each date—August 30th, the first 
+    night of cold reading; September 29th; October 28th for Halloweekend. Each checkmark 
+    feels like a pulse point of that year.</p>
+  <p>The 'CB' on the front was more than just a label; it was a brand for that specific era
+     of my life. I look at that final entry for December 26th, followed by those two question 
+     marks, and I’m reminded of how the certainty of those first few months eventually gave way 
+     to the unknown. The math in the corner, the 571—I don't even need to explain what it was for;
+      just seeing the sum reminds me of the effort and the tallying I was doing back then. This isn't 
+      just a notebook; it’s a physical map of where my head was for those four months. </p>
 
 
 <!-------------AI ARCHIVIST METADATA TABLE----------------->
@@ -159,59 +168,65 @@
    </tr>
 <!-------------------->
   	<tr>
-      <td>Name</td>
-      <td></td>
+      <td>Artifiact ID</td>
+      <td>LIT-JRN-2023-CB</td>
     </tr>
    <tr>
-    <td>Description</td>
-    <td></td>
+    <td>Title</td>
+    <td>Hand-Annotated "CB" Notebook</td>
     </tr>
   <tr>
-    <td>Material Type</td>
-    <td></td>
+    <td>Category</td>
+    <td>Literature / Personal Records</td>
   </tr>
   <tr>
-    <td>Date (Approximate)</td>
-    <td></td>
+    <td>Date Range</td>
+    <td>August 30 - December 26, 223</td>
   </tr>
   <tr>
-    <td>Dimensions</td>
-    <td></td>
+    <td>Physical Description</td>
+    <td>A slim, olive-drab or sage-green notebook with a textured, 
+      scalloped right edge. The cover features hand-drawn elements 
+      in white ink: a large stylized "CB" monogram and a concentric, 
+      cloud-like doodle in the upper right. The lower half contains 
+      five dated entries written in red ink, accompanied by checkmarks 
+      and brief descriptions. A vertical column of numbers (totaling 571)
+       is written in the bottom left corner.</td>
   </tr>
   <tr>
-    <td>Color</td>
-    <td></td>
+    <td>Condition</td>
+    <td>Good; some minor fraying along the spine and light surface wear. The ink is well-preserved and legible.</td>
   </tr>
   <tr>
-    <td>Provenance</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Subject Keywords</td>
-    <td></td>
-  </tr>
-  <tr>
-	<td>Creator</td>
-	<td</td>
-  </tr>
-  <tr>
-	<td>Format</td>
-	<td></td>
-  </tr>
-  <tr>
-	<td>Condition</td>
-	<td></td>
-  </tr>
-  <tr>
-	<td>Notes</td>
-	<td>.</td>
-  </tr>
+  
 
   </table>
 
 </div>
 
 <!----------------------------------------------------------->
+
+<!--- JS to control toggle button --------->
+<script>
+  function toggleParagraph() {
+    const p1 = document.getElementById("p1");
+    const p2 = document.getElementById("p2");
+	const button = document.getElementById("toggleBtn");
+
+    if (p1.classList.contains("active-paragraph")) {
+      p1.classList.remove("active-paragraph");
+      p2.classList.add("active-paragraph");
+
+	  button.textContent = "View Human Archivist";
+    } else {
+      p2.classList.remove("active-paragraph");
+      p1.classList.add("active-paragraph");
+
+	  button.textContent = "View AI Archivist";
+    }
+  }
+</script>
+<!-------------------------------------------->
 
 
 <!--- JS to control toggle button --------->
