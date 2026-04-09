@@ -24,7 +24,6 @@ body {
    font-family: 'Cormorant Garamond', serif;
    font-size: 18px;
    line-height: 1.6;
-}
 main {
    margin-top: 80px;
    margin-bottom: 80px;
@@ -110,14 +109,14 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 1px solid;
     padding: 20px 30px;
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 1px;
     background-color:#133E1D
  }
 
  .footer-content { 
     max-width: 1015px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -168,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     padding: 0 120px;
     padding-bottom: 30px;
+    color:#fffbea;
 }
 
  /* ----------- NAV BAR + BUTTONS --------*/ 
