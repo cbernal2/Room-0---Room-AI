@@ -487,3 +487,13 @@ h2 {
   transition: 0.2s ease;
   opacity: 0.8;
 }
+
+/*.      LIST STYLING.    */
+ul {
+  list-style: disc;
+}
+
+.bullet-list {
+  list-style: disc;
+  padding-left: 100px;
+}
