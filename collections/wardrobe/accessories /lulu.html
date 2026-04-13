@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<title> Accessories - Room 0</title>
+	<link rel="stylesheet" href="../../../style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head> 
+
+<!-- "back to top" button anchor tag -->
+ <body> 
+	<a id="top"></a>
+
+<!------------ HEADER ------------->
+<header> 
+	<div class="header-content">
+	<div class="header-site-name">
+			<h1><a href="../../../index.html">Room Ø</a></h1>
+		</div>
+	<div class="header-nav">
+	<!-- this aligns the header with the title on the left -->
+	<nav> <!-- NAVIGATION BAR --->
+		<ul> 
+			<li><a href="../../../index.html">Home</a></li> 
+			<li><a href="../../../about.html">About</a></li>
+			<li><a href="../../../collections.html" class="active">Collections</a></li>
+			<li><a href="../../../az.html">A-Z</a></li>
+		</ul>
+	</nav> <!-- NAVIGATION BAR --->
+</div>
+</div>
+</header>
+<!---------------------------------->
+
+
+<main> 
+
+
+<div style="text-align: center">
+	<h3>Lululemon Duffle Bag</h3>
+</div>
+
+<br><br>
+
+<!--- IMAGE -->
+<div style="text-align: center;">
+	<img src="../../../images/bags-lulu.jpeg" alt="Black Lululemon Duffle Bag" style="width:600px; height: auto; border-radius: 30px; transform: rotate(360deg)">
+	<figcaption>Lululemon Duffle Bag. Image taken by Me.</figcaption> 
+</div>
+
+<!------------>
+
+<br>
+
+<!----- AI Archvist Toggle Button -->
+<div class="toggle-button">
+	<button id="toggleBtn" onclick="toggleParagraph()"> AI Archivist</button>
+</div>
+<!----------------------------------->
+
+
+<!------ This is the Human Archivist initial paragraph-------->
+<div id="p1" class="paragraph active-paragraph"> 
+
+<div class="quote-section">
+  <span class="quote-label">From Mom...</span>
+
+<blockquote>
+    Dad bought this for my birthday along with a Lululemon ourfit. 21 years
+    ago while you were still in my tummy.
+</blockquote>
+
+</div>
+
+<!----------------------------------------------------------->
+
+<br><br>
+
+<!----------------HUMAN METADATA TABLE ----------------------->
+<div style="text-align: center;">
+      <h3>Artifact Metadata</h3>
+    </div>
+
+  <table class="table">
+  <!-- table headings -->
+
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+ <!-------------------->
+  	<tr>
+      <td>Name</td>
+      <td>Lululemon Duffle BAG</td>
+    </tr>
+   <tr>
+    <td>Collection</td>
+    <td>Wardrobe > Accessories </td>
+    </tr>
+  <tr>
+    <td>Origin</td>
+    <td>Gifted to my mom by my dad </td>
+  </tr>
+  <tr>
+    <td>Date</td>
+    <td>Feburary 2004</td>
+  </tr>
+  <tr>
+    <td>Location</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>Condition</td>
+    <td>Used</td>
+  </tr>
+  <tr>
+    <td>Colour</td>
+    <td>Black</td>
+  </tr>
+  <tr>
+	<td>Material</td>
+	<td>Leather, Metal</td>
+  </tr>
+
+  </table>
+
+</div>
+<!----------------------------------> 
+
+<!-------- this is the AI Archivist paragraph---------------->
+<div id="p2" class="paragraph"> 
+
+	<div style="text-align:center;">
+		<h2>Lululemon Athletica Pebbled Duffel</h2>
+		<br><br>
+	</div>
+
+	<p>"If the Coach bag was about who I wanted the world to see, this Lululemon bag 
+        was about who I was trying to become for myself. It’s the bag of early morning 
+        alarms and the smell of eucalyptus towels. It lived in the trunks of cars and 
+        on the floors of locker rooms, stuffed with yoga mats and change-of-clothes. 
+        It’s less about 'fashion' and more about 'movement'—a heavy, sturdy reminder
+         of a time when my schedule was measured in classes and personal bests. It feels
+          like a transitional object, marking the moment my priorities shifted from 
+          the boardroom look to the 'zen' pursuit."</p>
+
+<br><br><br>
+
+<!-------------AI ARCHIVIST METADATA TABLE----------------->
+	<div style="text-align: center;">
+      <h3>Artifact Metadata</h3>
+    </div>
+
+  <table class="table">
+  <!-- table headings -->
+
+    <tr>
+      <th>Field</th>
+      <th>Details</th>
+   </tr>
+<!-------------------->
+  	<tr>
+      <td>Identifier</td>
+      <td>ARCH-002</td>
+    </tr>
+   <tr>
+    <td>Title</td>
+    <td>Lululemon Athletica Pebbled Duffel</td>
+    </tr>
+  <tr>
+  	<td>Date</td>
+  	<td>circa 2010–2012</td>
+  </tr>
+  <tr>
+  	<td>Physical Description</td>
+  	<td>Black pebbled vegan leather (polyurethane) gym bag. Features
+         embossed "LULULEMON ATHLETICA" varsity-style lettering on the front,
+          two silver-toned ventilation grommets at the base, and reinforced rolled handles.</td>
+  </tr>
+  <tr>
+  	<td>Condition</td>
+  	<td>Good; minor surface scuffing on the bottom corners and slight creasing in the material from storage.
+         The hardware remains bright.
+    </td>
+  </tr>
+  <tr>
+    <td>Context/Provenance</td>
+    <td>Representing the "Wellness Era," this was the bag of the commute-to-yoga-studio lifestyle.</td>
+  </tr>
+
+
+  </table>
+
+</div>
+
+<!----------------------------------------------------------->
+
+
+<!--- JS to control toggle button --------->
+<script>
+  function toggleParagraph() {
+    const p1 = document.getElementById("p1");
+    const p2 = document.getElementById("p2");
+	const button = document.getElementById("toggleBtn");
+
+    if (p1.classList.contains("active-paragraph")) {
+      p1.classList.remove("active-paragraph");
+      p2.classList.add("active-paragraph");
+
+	  button.textContent = "View Human Archivist";
+    } else {
+      p2.classList.remove("active-paragraph");
+      p1.classList.add("active-paragraph");
+
+	  button.textContent = "View AI Archivist";
+    }
+  }
+</script>
+<!-------------------------------------------->
+
+
+</div>
+
+
+
+</main> 
+
+
+
+
+<!-- "back to top" button --->
+<a href="#top">↑ Back to Top</a>
+
+<!------------- FOOTER -------------->
+<footer> 
+<div class="footer-content">
+
+<nav class="footer-nav"> 
+	<a href="../../../index.html">Home</a>
+	<a href="../../../about.html">About</a>
+	<a href="../../../collections.html">Collections</a>
+	<!---- <a href="az.html">A-Z</a> --->
+</nav>
+
+
+<div class="footer-site-name">
+	<h1><a href="../../../index.html">Room Ø</a></h1>
+</div>
+</div>
+
+
+
+<!----- bottom center copyright ----->
+<p class="footer-copy">&copy; 2025 Room 0. All rights reserved.</p>
+<!------------------------------------>
+
+</footer>
+
+<!------------------------------------>
+
+
+</body>
+</html> 
